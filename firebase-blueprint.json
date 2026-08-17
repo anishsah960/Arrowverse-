@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user scores, level progression, and stats",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "User identifier" },
+        "highScore": { "type": "number", "description": "Highest score achieved" },
+        "highestLevel": { "type": "number", "description": "Highest level unlocked" },
+        "stars": { "type": "number", "description": "Total stars accumulated" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "highScore", "highestLevel"]
+    }
+  },
+  "firestore": {
+    "/user_profiles/{userId}": {
+      "schema": "UserProfile",
+      "description": "User game progress document"
+    }
+  }
+}

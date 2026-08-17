@@ -1,0 +1,6 @@
+{
+  "name": "Arrow Puzzle",
+  "description": "Tap away arrows to escape the maze. A relaxing logic puzzle game with daily challenges and calming gameplay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
